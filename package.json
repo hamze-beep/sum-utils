@@ -1,1 +1,9 @@
-{ "name": "sum-utils", "version": "1.0.0", "scripts": { "test": "node src/sum.test.js" } }
+{
+  "name": "sum-utils",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "node scripts/setup.js",
+    "pretest": "node scripts/validate.js",
+    "test": "node src/sum.test.js"
+  }
+}
